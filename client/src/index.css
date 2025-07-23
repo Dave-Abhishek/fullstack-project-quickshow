@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+  --color-primary: #F84565;
+  --color-primary-dull: #D63854;
+}
+
+*{
+  font-family: "Outfit", sans-serif;
+  /* below is for thin scrollbar, you can do it hidden also */
+  scrollbar-width: thin;
+  /* below is to give scrollbar a color */
+  scrollbar-color: #787777 #1e1e1e ;
+}
+
+body{
+  color: white;
+  background-color: #09090B;
+}
+
+.no-scrollbar{
+  scrollbar-width: none;
+}
+
+/* Remove spin buttons in number input for WebKit browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* optional, good to reset */
+}
+
+/* Style calendar icon in input[type="date"] */
+input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
